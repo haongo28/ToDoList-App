@@ -20,21 +20,6 @@
             android:layout_height="wrap_content"
             android:background="@color/calendar_color" />
 
-        <!--        <com.applandeo.materialcalendarview.CalendarView-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            app:disabledDaysLabelsColor="#0A0B0C"-->
-        <!--            android:background="#EAF5FE"-->
-        <!--            app:abbreviationsBarColor="@color/calendar_color"-->
-        <!--            app:abbreviationsLabelsColor="@color/black"-->
-        <!--            app:daysLabelsColor="@color/black"-->
-        <!--            app:eventsEnabled="true"-->
-        <!--            app:headerColor="@color/calendar_color"-->
-        <!--            app:headerLabelColor="@color/black"-->
-        <!--            app:pagesColor="@color/calendar_color"-->
-        <!--            app:todayLabelColor="@color/primaryColor"-->
-        <!--            app:type="one_day_picker" />-->
-
         <LinearLayout
             android:id="@+id/task_layout_calendar"
             android:visibility="gone"
