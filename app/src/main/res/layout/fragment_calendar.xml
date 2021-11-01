@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Fragment.Main.CalendarFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_calendar_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CalendarView
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/calendar_color" />
+
+        <!--        <com.applandeo.materialcalendarview.CalendarView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:disabledDaysLabelsColor="#0A0B0C"-->
+        <!--            android:background="#EAF5FE"-->
+        <!--            app:abbreviationsBarColor="@color/calendar_color"-->
+        <!--            app:abbreviationsLabelsColor="@color/black"-->
+        <!--            app:daysLabelsColor="@color/black"-->
+        <!--            app:eventsEnabled="true"-->
+        <!--            app:headerColor="@color/calendar_color"-->
+        <!--            app:headerLabelColor="@color/black"-->
+        <!--            app:pagesColor="@color/calendar_color"-->
+        <!--            app:todayLabelColor="@color/primaryColor"-->
+        <!--            app:type="one_day_picker" />-->
+
+        <LinearLayout
+            android:id="@+id/task_layout_calendar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="false"
+                android:paddingHorizontal="8dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_calendar_completed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="false"
+                android:paddingHorizontal="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/no_task_layout_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_task_on_the_day"
+                android:textColor="#5B5C62"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/click_add_to_create_task"
+                android:textColor="#5B5C62"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
