@@ -15,13 +15,13 @@
         android:padding="20dp"
         android:background="@color/Aqua"
         >
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_centerVertical="true"/>
-        <!-- android:src="@drawable/ic_profile" -->
-<!-- mất cái gì á chị. em thấy cái nút hình setting không? chị để nó l-->
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_profile"/>
         <TextView
             android:id="@+id/profile_fullname"
             android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
             android:text="Admin Xingqiu"
             android:textColor="@color/black"
             android:textSize="24sp" />
- <!--em oi chi chua connect no voi git hay sao a -->
+
         <TextView
             android:id="@+id/profile_email"
             android:layout_width="wrap_content"
@@ -55,8 +55,8 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="20dp" />
-        <!--    android:src="@drawable/outline_settings_24" /> -->
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/outline_settings_24" />
 
     </RelativeLayout>
     <LinearLayout
@@ -79,10 +79,8 @@
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_centerHorizontal="true"
-                    app:tint="@color/white" />
-           <!--         android:src="@drawable/round_assignment_turned_in_24" -->
-
-
+                    app:tint="@color/white"
+                    android:src="@drawable/round_assignment_turned_in_24" />
                 <TextView
                     android:id="@+id/task_done_number"
                     android:layout_width="wrap_content"
@@ -125,8 +123,8 @@
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_centerHorizontal="true"
-                    app:tint="@color/white" />
-             <!--   android:src="@drawable/round_assignment_late_24" -->
+                    app:tint="@color/white"
+                    android:src="@drawable/round_assignment_late_24" />
                 <TextView
                     android:id="@+id/task_pendding_number"
                     android:layout_width="wrap_content"
