@@ -6,6 +6,8 @@
         <entry key="..\:/Hao_course/Semester2021_2022/ToDoList-App/app/src/main/res/layout/fragment_profile.xml" value="0.13333333333333333" />
         <entry key="..\:/Hao_course/Semester2021_2022/ToDoList-App/app/src/main/res/layout/fragment_task.xml" value="0.13333333333333333" />
         <entry key="..\:/Hao_course/Semester2021_2022/ToDoList-App/app/src/main/res/layout/item_task_calendar.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/NguyenTienDung/AndroidStudioProjects/ToDoList-App/app/src/main/res/layout/fragment_calendar.xml" value="0.25" />
+        <entry key="..\:/Users/NguyenTienDung/AndroidStudioProjects/ToDoList-App/app/src/main/res/layout/fragment_profile.xml" value="0.16774791473586653" />
         <entry key="..\:/Users/NguyenTienDung/CodeSpace/Android/Java/TodosApp/app/src/main/res/drawable/circle_indicator_round.xml" value="0.10555555555555556" />
         <entry key="..\:/Users/NguyenTienDung/CodeSpace/Android/Java/TodosApp/app/src/main/res/drawable/foreground_dim.xml" value="0.17604166666666668" />
         <entry key="..\:/Users/NguyenTienDung/CodeSpace/Android/Java/TodosApp/app/src/main/res/drawable/ic_add.xml" value="0.17604166666666668" />
@@ -28,7 +30,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15_PREVIEW" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
