@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/set_completed_task_state"
+        android:title="@string/set_completed" />
+
+    <item
+        android:id="@+id/delete_task"
+        android:title="@string/delete" />
+</menu>
