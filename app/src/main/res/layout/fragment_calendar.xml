@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FFFF"
+    tools:context=".Fragment.CalendarFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CalendarView
+            android:background="@color/calendar_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+<!--        <com.applandeo.materialcalendarview.CalendarView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:disabledDaysLabelsColor="#0A0B0C"-->
+<!--            android:background="#EAF5FE"-->
+<!--            app:abbreviationsBarColor="@color/calendar_color"-->
+<!--            app:abbreviationsLabelsColor="@color/black"-->
+<!--            app:daysLabelsColor="@color/black"-->
+<!--            app:eventsEnabled="true"-->
+<!--            app:headerColor="@color/calendar_color"-->
+<!--            app:headerLabelColor="@color/black"-->
+<!--            app:pagesColor="@color/calendar_color"-->
+<!--            app:todayLabelColor="@color/primaryColor"-->
+<!--            app:type="one_day_picker" />-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="false"
+            android:paddingHorizontal="8dp" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

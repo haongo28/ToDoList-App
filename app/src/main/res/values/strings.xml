@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">TodosApp</string>
+    <string name="_for">For</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="due_date">Due Date</string>
+    <string name="anytime">Anytime</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="task">Nhiệm vụ</string>
+    <string name="calendar">Lịch</string>
+    <string name="profile">Của tôi</string>
+
+    <string name="next">Tiếp tục</string>
+    <string name="welcome_to_aking">Welcome to aking</string>
+    <string name="whats_going_to_happen_tomorrow">Whats going to happen tomorrow?</string>
+    <string name="log_in">Đăng nhập</string>
+    <string name="welcome_to_app">Welcome to MP Pro</string>
+    <string name="on_boarding_2_message">Get notified when work happens.</string>
+    <string name="on_boarding_3_message">Task and assign them to colleagues.</string>
+    <string name="start">Bắt đầu</string>
+    <string name="back_press">Nhấn Lần Nữa Để Thoát</string>
+    <string name="username">Username</string>
+    <string name="todos_list">Todos</string>
+
+    <!-- Task screen -->
+    <string name="add_mission">Thêm nhiệm vụ phụ</string>
+    <string name="due_day">Ngày đến hạn</string>
+    <string name="due_time_and_notification">Thời gian và Lời nhắc</string>
+    <string name="repeat">Lặp lại nhiệm vụ</string>
+    <string name="note">Ghi chú</string>
+    <string name="attach">Tập tin đính kèm</string>
+    <string name="add">THÊM</string>
+
+    <!-- Task menu -->
+    <string name="make_done">Đánh dấu là xong</string>
+    <string name="delete">Xóa</string>
+    <string name="share">Chia sẻ</string>
+    <string name="repeat_task">Nhiệm vụ trùng lặp</string>
+
+    <!-- Spinner item -->
+    <string-array name="favorite_list">
+        <item>Danh sách yêu thích</item>
+    </string-array>
+</resources>
