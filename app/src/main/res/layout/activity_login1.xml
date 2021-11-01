@@ -8,6 +8,7 @@
     android:background="@color/white"
     xmlns:tool="http://schemas.android.com/tools">
 
+
     <ImageView
         android:id="@+id/logo_img"
         android:layout_width="150dp"
@@ -29,37 +30,36 @@
 
     <RelativeLayout
         android:id="@+id/login_group"
-        android:layout_below="@+id/tv_name"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
         android:background="#00000000">
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/login_username"
+            android:id="@+id/register_username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_name"
+            android:layout_below="@id/login_username"
             android:layout_marginHorizontal="0dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             tool:boxCornerRadiusBottomEnd="10dp"
             tool:boxCornerRadiusBottomStart="10dp"
             tool:boxCornerRadiusTopEnd="10dp"
             tool:boxCornerRadiusTopStart="10dp"
             tool:boxStrokeColor="@color/boxInputFields"
-            tool:endIconMode="clear_text"
             tool:hintTextColor="@color/boxInputFields"
             tool:placeholderText="Email">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/login_username1"
+                android:id="@+id/register_username1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
+                android:inputType="text"
                 android:maxLength="100"
-                android:inputType="textEmailAddress"
                 android:padding="13dp"
                 android:textColorHint="#000"
                 android:textSize="20sp" />
@@ -67,24 +67,53 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/login_password"
+            android:id="@+id/register_email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/login_username"
+            android:layout_below="@id/register_username"
             android:layout_marginHorizontal="0dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             tool:boxCornerRadiusBottomEnd="10dp"
             tool:boxCornerRadiusBottomStart="10dp"
             tool:boxCornerRadiusTopEnd="10dp"
             tool:boxCornerRadiusTopStart="10dp"
             tool:boxStrokeColor="@color/boxInputFields"
-            tool:endIconMode="password_toggle"
             tool:hintTextColor="@color/boxInputFields"
             tool:placeholderText="Email">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/login_username1"
+                android:id="@+id/register_email1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLength="100"
+                android:padding="13dp"
+                android:textColorHint="#000"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_email"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="15dp"
+            tool:boxCornerRadiusBottomEnd="10dp"
+            tool:boxCornerRadiusBottomStart="10dp"
+            tool:boxCornerRadiusTopEnd="10dp"
+            tool:boxCornerRadiusTopStart="10dp"
+            app:endIconMode="password_toggle"
+            tool:boxStrokeColor="@color/boxInputFields"
+            tool:hintTextColor="@color/boxInputFields"
+            tool:placeholderText="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_password1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
@@ -96,75 +125,43 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <TextView
-            android:id="@+id/to_register_button"
-            android:layout_width="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/register_confirmpassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/login_password"
-            android:layout_marginTop="10dp"
-            android:text="Forgot your password"
-            android:textColor="@color/black" />
+            android:layout_below="@id/register_password"
+            android:layout_marginHorizontal="0dp"
+            android:layout_marginTop="15dp"
+            tool:boxCornerRadiusBottomEnd="10dp"
+            tool:boxCornerRadiusBottomStart="10dp"
+            tool:boxCornerRadiusTopEnd="10dp"
+            tool:boxCornerRadiusTopStart="10dp"
+            app:endIconMode="password_toggle"
+            tool:boxStrokeColor="@color/boxInputFields"
+            tool:hintTextColor="@color/boxInputFields"
+            tool:placeholderText="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/register_confirmpassword1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:maxLength="100"
+                android:inputType="textPassword"
+                android:padding="13dp"
+                android:textColorHint="#000"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/login_button"
+            android:id="@+id/register_button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@+id/login_password"
+            android:layout_below="@+id/register_confirmpassword"
+            android:layout_marginTop="15dp"
             android:backgroundTint="#07BEB8"
-            android:layout_marginTop="40dp"
-            android:text="LOGIN" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/login_button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Don't have an account? "/>
-
-            <TextView
-                android:id="@+id/to_register_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Create one."
-                android:textColor="@color/black"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/login_button"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="50dp">
-            <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/google"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="20dp"
-                android:layout_marginTop="10dp"
-                android:text="Sign in with google "/>
-
-        </LinearLayout>
-
-
-
+            android:text="Register" />
     </RelativeLayout>
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/forgot_password_button"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Forgot your password?"-->
-    <!--        android:layout_alignParentBottom="true"-->
-    <!--        android:layout_centerHorizontal="true"-->
-    <!--        android:layout_marginBottom="28dp"/>-->
-
 </RelativeLayout>
