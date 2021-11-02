@@ -27,4 +27,24 @@
     <string name="set_completed">Đánh dấu là hoàn thành</string>
     <string name="delete">Xóa</string>
     <string name="set_un_completed">Đánh dấu là Hoàn tác</string>
+
+
+    <!-- Task screen -->
+    <string name="add_mission">Thêm nhiệm vụ phụ</string>
+    <string name="due_day">Ngày đến hạn</string>
+    <string name="due_time_and_notification">Thời gian và Lời nhắc</string>
+    <string name="repeat">Lặp lại nhiệm vụ</string>
+    <string name="note">Ghi chú</string>
+    <string name="attach">Tập tin đính kèm</string>
+    <string name="add">THÊM</string>
+
+    <!-- Task menu -->
+    <string name="make_done">Đánh dấu là xong</string>
+    <string name="share">Chia sẻ</string>
+    <string name="repeat_task">Nhiệm vụ trùng lặp</string>
+
+    <!-- Spinner item -->
+    <string-array name="favorite_list">
+        <item>Danh sách yêu thích</item>
+    </string-array>
 </resources>
