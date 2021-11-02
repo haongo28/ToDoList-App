@@ -1,266 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.TaskFragment">
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Fragment.Main.TaskFragment">
 
     <LinearLayout
+        android:id="@+id/layout_task_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/task_background_color"
         android:orientation="vertical">
 
-        <Toolbar
-            android:id="@+id/tb_task_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:elevation="4dp">
-
-            <ImageButton
-                android:id="@+id/back_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/task_background_color"
-                android:src="@drawable/ic_back_icon" />
-
-        </Toolbar>
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:layout_marginStart="20dp"
-            android:background="@drawable/task_item_border_radius">
-
-            <Spinner
-                android:id="@+id/spFavorite"
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/task_item_border_radius"
-                android:padding="4dp"
-                android:textAlignment="gravity" />
-
-        </RelativeLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginHorizontal="12dp"
-            android:maxHeight="250dp"
-            android:scrollbars="vertical"
-            android:textSize="26sp"
-            android:textStyle="bold" />
-
         <LinearLayout
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/task_value_border"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:layout_height="69dp"
+            android:orientation="horizontal">
 
+            <LinearLayout
+                android:layout_width="342dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <ImageButton
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="32dp"
-                android:background="@color/task_background_color"
-                android:src="@drawable/ic_plus_icon" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_type_task"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/tv_add_mission"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/add_mission"
-                android:textColor="@color/add_task_color"
-                android:textSize="18sp" />
+            <LinearLayout
+                android:id="@+id/btn_menu_task_layout"
+                android:layout_width="50sp"
+                android:layout_height="69dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
 
         </LinearLayout>
 
-
         <LinearLayout
+            android:id="@+id/task_layout_calendar"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/task_value_border"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:orientation="vertical">
 
-            <ImageButton
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@color/task_background_color"
-                android:src="@drawable/ic_calendar" />
-
-            <TextView
-                android:id="@+id/tv_calendar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/due_day"
-                android:textSize="18sp" />
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
-                android:gravity="end">
+                android:nestedScrollingEnabled="false"
+                android:paddingHorizontal="8dp" />
 
-                <TextView
-                    android:id="@+id/tv_calendar_status"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp"
-                    android:padding="10dp" />
-            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_task_completed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:nestedScrollingEnabled="false"
+                android:paddingHorizontal="8dp" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/no_task_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/task_value_border"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/task_background_color"
-                android:src="@drawable/ic_clock_icon" />
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/due_time_and_notification"
-                android:textSize="18sp" />
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="end">
-
-                <TextView
-                    android:id="@+id/tv_time_status"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp" />
-            </RelativeLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/task_value_border"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/task_background_color"
-                android:src="@drawable/ic_repeat_icon" />
+                android:text="@string/no_task_on_the_day"
+                android:textColor="#5B5C62"
+                android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/tv_repeat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/repeat"
-                android:textSize="18sp" />
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="end">
-
-                <TextView
-                    android:id="@+id/tv_repeat_status"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp" />
-            </RelativeLayout>
+                android:layout_marginTop="4dp"
+                android:text="@string/click_add_to_create_task"
+                android:textColor="#5B5C62"
+                android:textSize="16sp" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/task_value_border"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <ImageButton
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@color/task_background_color"
-                android:src="@drawable/ic__list" />
-
-            <TextView
-                android:id="@+id/tv_note"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/note"
-                android:textSize="18sp" />
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="end">
-
-                <TextView
-                    android:id="@+id/tv_note_status"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp" />
-            </RelativeLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/task_value_border"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/task_background_color"
-                android:src="@drawable/ic_attach_icon" />
-
-            <TextView
-                android:id="@+id/tv_attach"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="@string/attach"
-                android:textSize="18sp" />
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="end">
-
-                <TextView
-                    android:id="@+id/tv_attach_status"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="10dp" />
-            </RelativeLayout>
-        </LinearLayout>
     </LinearLayout>
 
-</FrameLayout>
+</androidx.core.widget.NestedScrollView>

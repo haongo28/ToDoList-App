@@ -9,7 +9,7 @@
         android:id="@+id/taskFragment"
         android:name="com.example.todosapp.Fragment.Main.TaskFragment"
         android:label="fragment_task"
-        tools:layout="@layout/fragment_task" />
+        tools:layout="@layout/fragment_detail_task" />
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.example.todosapp.Fragment.Main.CalendarFragment"

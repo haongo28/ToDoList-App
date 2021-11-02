@@ -19,7 +19,7 @@ public class ProfileFragment extends Fragment {
     //dialog
     //private ExampleDialogListener listener;
 
-    @Override
+    @Override 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment

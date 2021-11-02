@@ -1,66 +1,91 @@
 package com.example.todosapp.Fragment.Main;
 
+
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CalendarView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.todosapp.Adapter.TaskCalendarAdapter;
+import com.example.todosapp.Adapter.TaskCalendarCompletedAdapter;
+import com.example.todosapp.Models.Task;
 import com.example.todosapp.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link TaskFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
+import java.util.ArrayList;
+
+
 public class TaskFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    View view;
+    LinearLayout layoutTask, layoutNoTask, layoutContainer;
 
-    public TaskFragment() {
-        // Required empty public constructor
-    }
+    RecyclerView rvCalendar;
+    ArrayList<Task> tasks;
+    TaskCalendarAdapter adapter;
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment TaskFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static TaskFragment newInstance(String param1, String param2) {
-        TaskFragment fragment = new TaskFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    RecyclerView rvTaskCompleted;
+    ArrayList<Task> tasksCompleted;
+    TaskCalendarCompletedAdapter adapterCompleted;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_task, container, false);
+        view = inflater.inflate(R.layout.fragment_task, container, false);
+        InitComponent();
+        GetTask();
+        SetUpRvTask();
+        SetUpRvTaskCompleted();
+        return view;
+    }
+
+    private void InitComponent() {
+        //layoutContainer = view.findViewById(R.id.layout_calendar_container);
+        layoutTask = view.findViewById(R.id.task_layout_calendar);
+        layoutNoTask = view.findViewById(R.id.no_task_layout);
+        rvCalendar = view.findViewById(R.id.rv_calendar);
+        rvTaskCompleted = view.findViewById(R.id.rv_task_completed);
+    }
+
+    private void GetTask() {
+        tasks = new ArrayList<>();
+        tasks.add(new Task("1", "1", "1", true, true, new ArrayList<>(), null));
+        tasks.add(new Task("2", "2", "2", true, false, new ArrayList<>(), null));
+        tasks.add(new Task("3", "3", "3", true, true, new ArrayList<>(), null));
+        tasks.add(new Task("4", "4", "4", true, false, new ArrayList<>(), null));
+        tasks.add(new Task("5", "5", "4", true, false, new ArrayList<>(), null));
+        tasks.add(new Task("6", "6", "4", true, false, new ArrayList<>(), null));
+
+        tasksCompleted = new ArrayList<>();
+        tasksCompleted.add(new Task("1", "123456789", "1", false, true, new ArrayList<>(), null));
+        tasksCompleted.add(new Task("3", "123456789", "3", false, false, new ArrayList<>(), null));
+
+        layoutTask.setVisibility(View.VISIBLE);
+        layoutNoTask.setVisibility(View.GONE);
+    }
+
+    private void SetUpRvTask() {
+        adapter = new TaskCalendarAdapter(getContext(), tasks,
+                null,
+                null);
+
+        rvCalendar.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
+        rvCalendar.setAdapter(adapter);
+    }
+
+    private void SetUpRvTaskCompleted() {
+        adapterCompleted = new TaskCalendarCompletedAdapter(getContext(), tasksCompleted, null,
+                null);
+
+        rvTaskCompleted.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
+        rvTaskCompleted.setAdapter(adapterCompleted);
     }
 }
