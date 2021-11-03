@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/categories_management"
+        android:title="Quản lí danh mục" />
+    <item
+        android:id="@+id/search_task"
+        android:title="Tìm kiếm" />
+</menu>

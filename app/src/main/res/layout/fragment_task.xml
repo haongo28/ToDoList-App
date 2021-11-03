@@ -19,23 +19,59 @@
             android:layout_width="match_parent"
             android:layout_height="69dp"
             android:orientation="horizontal">
+            <com.google.android.material.chip.Chip
+                android:backgroundTint="@color/primaryColorLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:hint="Tất cả"/>
+            <com.google.android.material.chip.Chip
+                android:backgroundTint="@color/primaryColorLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:hint="Cá nhân"/>
 
-            <LinearLayout
-                android:layout_width="342dp"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <androidx.recyclerview.widget.RecyclerView
+                <!--       <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_type_task"
                     android:layout_width="match_parent"
-                    android:layout_height="0sp" />
-            </LinearLayout>
+                    android:layout_height="0sp" />   -->
+
+            <com.google.android.material.chip.Chip
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/primaryColorLight"
+                android:hint="Bài tập"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textSize="18sp" />
 
             <LinearLayout
-                android:id="@+id/btn_menu_task_layout"
+                android:id="@+id/menu_task_layout"
                 android:layout_width="50sp"
                 android:layout_height="69dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:layout_marginStart="45sp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/btn_menu_task_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="lable">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none" />
+
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
 
@@ -64,15 +100,14 @@
                 android:nestedScrollingEnabled="false"
                 android:paddingHorizontal="8dp" />
         </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/no_task_layout"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/no_task_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
