@@ -51,7 +51,8 @@
             tool:boxCornerRadiusTopStart="10dp"
             tool:boxStrokeColor="@color/boxInputFields"
             tool:hintTextColor="@color/boxInputFields"
-            tool:placeholderText="Email">
+            tool:placeholderText="Email"
+            tool:ignore="NotSibling">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/forgot_email1"
@@ -163,3 +164,6 @@
             android:layout_marginTop="20dp"
             android:backgroundTint="#07BEB8"
             android:text="Done" />
+
+    </RelativeLayout>
+</RelativeLayout>
