@@ -3,12 +3,16 @@ package com.example.todosapp.Fragment.Main;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CalendarView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -35,6 +39,7 @@ public class TaskFragment extends Fragment {
     RecyclerView rvTaskCompleted;
     ArrayList<Task> tasksCompleted;
     TaskCalendarCompletedAdapter adapterCompleted;
+    Toolbar tbmenu;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,6 +49,7 @@ public class TaskFragment extends Fragment {
         GetTask();
         SetUpRvTask();
         SetUpRvTaskCompleted();
+        SetupToolBar();
         return view;
     }
 
@@ -53,6 +59,7 @@ public class TaskFragment extends Fragment {
         layoutNoTask = view.findViewById(R.id.no_task_layout);
         rvCalendar = view.findViewById(R.id.rv_calendar);
         rvTaskCompleted = view.findViewById(R.id.rv_task_completed);
+        tbmenu = view.findViewById(R.id.tb_task);
     }
 
     private void GetTask() {
@@ -87,5 +94,41 @@ public class TaskFragment extends Fragment {
 
         rvTaskCompleted.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
         rvTaskCompleted.setAdapter(adapterCompleted);
+    }
+
+    // MENU
+    private void SetupToolBar(){
+        tbmenu.inflateMenu(R.menu.menu_task_layout);
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        setHasOptionsMenu(true);
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater)  {
+        inflater= getActivity().getMenuInflater();
+        inflater.inflate(R.menu.menu_task_layout, menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected( MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.categories_management:
+                Toast.makeText(getActivity(),
+                        "categories management selected",
+                        Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.search_task:
+                Toast.makeText(getActivity(),
+                        "search task selected",
+                        Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

@@ -3,8 +3,8 @@
 
     <item
         android:id="@+id/categories_management"
-        android:title="Quản lí danh mục" />
+        android:title="@string/categories_management" />
     <item
         android:id="@+id/search_task"
-        android:title="Tìm kiếm" />
+        android:title="@string/search" />
 </menu>

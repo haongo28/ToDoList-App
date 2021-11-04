@@ -27,9 +27,10 @@
     <string name="set_completed">Đánh dấu là hoàn thành</string>
     <string name="delete">Xóa</string>
     <string name="set_un_completed">Đánh dấu là Hoàn tác</string>
-
-
-    <!-- Task screen -->
+    <!-- Menu in Task screen -->
+    <string name="categories_management">Quản lí danh mục</string>
+    <string name="search">Tìm kiếm</string>
+    <!-- Detail Task screen -->
     <string name="add_mission">Thêm nhiệm vụ phụ</string>
     <string name="due_day">Ngày đến hạn</string>
     <string name="due_time_and_notification">Thời gian và Lời nhắc</string>
