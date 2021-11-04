@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_marginTop="3sp"
+    android:padding="10sp"
+    android:background="#F4FAFB"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_marginTop="3sp"
+    android:padding="10sp"
+    android:background="#F4FAFB">
+
+    <CheckBox
+        android:id="@+id/chb_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/ic_checkbox_complete_task"
+        android:buttonTint="#0093c4"
+        android:gravity="center_vertical"
+        />
+
+    <TextView
+        android:id="@+id/tv_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="10sp"
+        android:textSize="16sp"
+        android:text="@string/add_mission" />
+    <CheckBox
+        android:id="@+id/chb_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/ic_checkbox_star_item_task"
+        android:buttonTint="#63ccff"
+        android:layout_marginStart="250sp"
+        android:gravity="center_vertical"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

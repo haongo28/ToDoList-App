@@ -2,7 +2,6 @@ package com.example.todosapp.Adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.graphics.Paint;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -66,7 +65,7 @@ public class TaskCalendarAdapter extends RecyclerView.Adapter<TaskCalendarAdapte
         }
 
         if (task.isStart()) {
-            holder.btnStart.setImageResource(R.drawable.ic_baseline_star_24);
+            holder.btnStart.setImageResource(R.drawable.ic_start_full);
         } else {
             holder.btnStart.setImageResource(R.drawable.ic_star_border);
         }
