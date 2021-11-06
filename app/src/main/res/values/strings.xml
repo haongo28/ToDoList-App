@@ -49,4 +49,13 @@
         <item>Danh sách yêu thích</item>
     </string-array>
 
+    <!-- ToDoList -->
+    <string name="all_search">All/Search</string>
+    <string name="Today">Today</string>
+    <string name="completed_today">Completed Today</string>
+    <string name="check_all_completed_task">Check all completed tasks</string>
+    <string name="tasks">Tasks</string>
+    <string name="calendar_eng">Calendar</string>
+    <string name="me">Me</string>
+
 </resources>
