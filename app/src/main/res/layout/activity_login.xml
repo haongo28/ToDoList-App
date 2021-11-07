@@ -41,7 +41,6 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_name"
             android:layout_marginHorizontal="0dp"
             android:layout_marginTop="20dp"
             tool:boxCornerRadiusBottomEnd="10dp"
@@ -54,7 +53,6 @@
             tool:placeholderText="Email">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/login_username1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
@@ -97,7 +95,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/to_register_button"
+            android:id="@+id/to_forgot_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/login_password"
