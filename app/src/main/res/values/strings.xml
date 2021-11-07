@@ -58,4 +58,13 @@
     <string name="calendar_eng">Calendar</string>
     <string name="me">Me</string>
 
+    <!-- Categories-->
+    <string name="categories_managements">Categories Management</string>
+    <string name="display_on_homepage">Categories display on homepage</string>
+    <string name="edit">Edit</string>
+    <string name="hide">Hide</string>
+    <string name="delete_categories">Delete</string>
+    <string name="create_new">Create New</string>
+    <string name="long_press_and_drag">Long press and drag to reorder</string>
+
 </resources>
