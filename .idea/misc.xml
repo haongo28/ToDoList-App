@@ -28,7 +28,20 @@
         <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/activity_login.xml" value="0.2957427536231884" />
         <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/activity_login1.xml" value="0.2957427536231884" />
         <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/activity_login2.xml" value="0.2957427536231884" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/activity_main.xml" value="0.19427083333333334" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/activity_on_boarding.xml" value="0.19427083333333334" />
         <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/activity_register.xml" value="0.2957427536231884" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/activity_reset_password.xml" value="0.36666666666666664" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/activity_reset_password2.xml" value="0.36666666666666664" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/fragment_calendar.xml" value="0.36666666666666664" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/fragment_on_boarding1.xml" value="0.19427083333333334" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/fragment_on_boarding2.xml" value="0.19427083333333334" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/fragment_on_boarding3.xml" value="0.19427083333333334" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/fragment_profile.xml" value="0.19427083333333334" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/fragment_task.xml" value="0.19427083333333334" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/item_task_calendar.xml" value="0.19427083333333334" />
+        <entry key="..\:/github/ToDoList-App/app/src/main/res/layout/item_task_calendar_completed.xml" value="0.19427083333333334" />
       </map>
     </option>
   </component>
