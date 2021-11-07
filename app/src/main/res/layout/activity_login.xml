@@ -110,8 +110,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@+id/login_password"
-            android:backgroundTint="#07BEB8"
             android:layout_marginTop="40dp"
+            android:backgroundTint="#07BEB8"
             android:text="LOGIN" />
 
         <LinearLayout
@@ -124,7 +124,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an account? "/>
+                android:text="Don't have an account? " />
 
             <TextView
                 android:id="@+id/to_register_button"
