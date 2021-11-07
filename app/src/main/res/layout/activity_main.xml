@@ -27,7 +27,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/main_graph" />
+        app:navGraph="@navigation/main_graph"
+        />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_animation"

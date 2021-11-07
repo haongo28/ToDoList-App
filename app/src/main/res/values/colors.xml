@@ -19,4 +19,13 @@
 
     <color name="task_background_color">#EAF5FE</color>
     <color name="add_task_color">#4286EA</color>
+
+
+    <color name="green">#6D9773</color>
+    <color name="dark_green">#0c3a2d</color>
+    <color name="brown">#BB8A52</color>
+    <color name="primary_brown">#ffcd94</color>
+    <color name="fade_brown">#ffe6c9</color>
+    <color name="yellow">#FFBA00</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#fff</color>
 </resources>

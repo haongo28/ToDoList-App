@@ -52,6 +52,29 @@
         <entry key="..\:/Hao_course/Semester2021_2022/ToDoList-App/app/src/main/res/menu/menu__tem_task_calendar.xml" value="0.21458333333333332" />
         <entry key="..\:/Hao_course/Semester2021_2022/ToDoList-App/app/src/main/res/menu/menu_task_layout.xml" value="0.4" />
         <entry key="..\:/Hao_course/Semester2021_2022/ToDoList-App/app/src/main/res/menu/task_menu.xml" value="0.21458333333333332" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/activity_main.xml" value="0.3936842105263158" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/activity_on_boarding.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/activity_register.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/activity_reset_password.xml" value="0.152" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/activity_reset_password2.xml" value="0.536" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/activity_splash.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/activity_todo.xml" value="0.4" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/dialog_profile_setting.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/fragment_calendar.xml" value="0.4" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/fragment_detail_task.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/fragment_on_boarding1.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/fragment_on_boarding2.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/fragment_on_boarding3.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/fragment_profile.xml" value="0.2259963768115942" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/fragment_task.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/item_favorite_list.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/item_options_finished.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/item_options_todo.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/item_task1.xml" value="0.536" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/item_task_calendar.xml" value="0.264" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/item_task_calendar_completed.xml" value="0.19479166666666667" />
+        <entry key="..\:/UIT/HKVII/NT118/New folder/ToDoList-App-main/app/src/main/res/layout/layout_bottom_toolbar.xml" value="0.4" />
         <entry key="..\:/Users/NguyenTienDung/CodeSpace/Android/Java/TodosApp/app/src/main/res/drawable/circle_indicator_round.xml" value="0.10555555555555556" />
         <entry key="..\:/Users/NguyenTienDung/CodeSpace/Android/Java/TodosApp/app/src/main/res/drawable/foreground_dim.xml" value="0.17604166666666668" />
         <entry key="..\:/Users/NguyenTienDung/CodeSpace/Android/Java/TodosApp/app/src/main/res/drawable/ic_add.xml" value="0.17604166666666668" />

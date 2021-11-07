@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:checked="true"
+        android:buttonTint="@color/yellow"
         android:clickable="false"/>
 
     <TextView
@@ -20,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:maxLength="26"
-        android:textColor="@color/Aqua"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:text="@string/app_name"
         android:background="@drawable/striker_text_line"/>

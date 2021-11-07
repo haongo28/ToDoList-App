@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.SplashActivity">
+    tools:context=".Activity.SplashActivity"
+    android:background="@color/dark_green">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -18,7 +19,8 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:src="@drawable/logo"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription"
+            android:tint="@color/yellow"/>
 
         <TextView
             android:id="@+id/tv_name"
@@ -28,6 +30,7 @@
             android:layout_height="wrap_content"
             android:lineHeight="56sp"
             android:text="@string/todos_list"
+            android:textColor="@color/yellow"
             tools:ignore="UnusedAttribute" />
     </LinearLayout>
 </RelativeLayout>
