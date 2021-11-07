@@ -14,4 +14,9 @@
     <color name="calendar_color">#EAF5FE</color>
     <color name="primaryColorDisabled">#D0E3F9</color>
     <color name="primaryColorLight">#D0E3F9</color>
+
+    <color name="choose_task_color">#A2C0E3</color>
+
+    <color name="task_background_color">#EAF5FE</color>
+    <color name="add_task_color">#4286EA</color>
 </resources>

@@ -54,7 +54,7 @@ public class TaskCalendarCompletedAdapter extends RecyclerView.Adapter<TaskCalen
             holder.imgBranch.setVisibility(View.VISIBLE);
         }
         if (task.isStart()) {
-            holder.btnStart.setImageResource(R.drawable.ic_baseline_star_24);
+            holder.btnStart.setImageResource(R.drawable.ic_start_full);
         } else {
             holder.btnStart.setImageResource(R.drawable.ic_star_border);
         }
