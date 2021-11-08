@@ -5,7 +5,7 @@
     android:id="@+id/login_screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/dark_green"
     xmlns:tool="http://schemas.android.com/tools">
 
     <ImageView
@@ -14,7 +14,8 @@
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="90dp"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo"
+        app:tint="@color/yellow" />
 
     <TextView
         android:id="@+id/tv_name"
@@ -25,6 +26,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:lineHeight="56sp"
+        android:textColor="@color/yellow"
         android:text="@string/todos_list" />
 
     <RelativeLayout
@@ -41,27 +43,26 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_name"
             android:layout_marginHorizontal="0dp"
             android:layout_marginTop="20dp"
+            android:textColorHint="@color/white"
+            android:theme="@style/TextInputLayoutStyle"
             tool:boxCornerRadiusBottomEnd="10dp"
             tool:boxCornerRadiusBottomStart="10dp"
             tool:boxCornerRadiusTopEnd="10dp"
             tool:boxCornerRadiusTopStart="10dp"
             tool:boxStrokeColor="@color/boxInputFields"
             tool:endIconMode="clear_text"
-            tool:hintTextColor="@color/boxInputFields"
             tool:placeholderText="Email">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/login_username1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
-                android:maxLength="100"
                 android:inputType="textEmailAddress"
+                android:maxLength="100"
                 android:padding="13dp"
-                android:textColorHint="#000"
+                android:textColorHint="@color/white"
                 android:textSize="20sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -80,7 +81,9 @@
             tool:boxCornerRadiusTopStart="10dp"
             tool:boxStrokeColor="@color/boxInputFields"
             tool:endIconMode="password_toggle"
-            tool:hintTextColor="@color/boxInputFields"
+            tool:endIconTint="@color/white"
+            android:textColorHint="@color/white"
+            android:theme="@style/TextInputLayoutStyle"
             tool:placeholderText="Email">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -91,28 +94,28 @@
                 android:maxLength="100"
                 android:inputType="textPassword"
                 android:padding="13dp"
-                android:textColorHint="#000"
                 android:textSize="20sp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
-            android:id="@+id/to_register_button"
+            android:id="@+id/to_forgot_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/login_password"
             android:layout_marginTop="10dp"
             android:text="Forgot your password"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/login_button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@+id/login_password"
-            android:backgroundTint="#07BEB8"
             android:layout_marginTop="40dp"
-            android:text="LOGIN" />
+            android:backgroundTint="@color/yellow"
+            android:text="LOGIN"
+            android:textColor="@color/black" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -124,14 +127,15 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an account? "/>
+                android:text="Don't have an account? "
+                android:textColor="@color/white"/>
 
             <TextView
                 android:id="@+id/to_register_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Create one."
-                android:textColor="@color/black"/>
+                android:textColor="@color/white"/>
 
         </LinearLayout>
 
@@ -150,6 +154,7 @@
                 android:layout_height="match_parent"
                 android:textSize="20dp"
                 android:layout_marginTop="10dp"
+                android:textColor="@color/white"
                 android:text="Sign in with google "/>
 
         </LinearLayout>

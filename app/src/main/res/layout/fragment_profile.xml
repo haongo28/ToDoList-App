@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:padding="20dp"
-        android:background="@color/Aqua"
+        android:background="@color/dark_green"
         >
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -32,7 +32,7 @@
             android:fontFamily="@font/avenir_next_rounded_pro_demi"
             android:includeFontPadding="false"
             android:text="Admin Xingqiu"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="24sp" />
 
         <TextView
@@ -45,7 +45,7 @@
             android:layout_toRightOf="@+id/profile_image"
             android:includeFontPadding="false"
             android:text="xingqiu@gmail.com"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="14sp" />
 
         <ImageView
@@ -56,6 +56,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
+            app:tint="@color/white"
             android:src="@drawable/outline_settings_24" />
 
     </RelativeLayout>
@@ -69,18 +70,20 @@
             android:layout_height="150dp"
             android:layout_weight="1"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/primaryColor"
+            app:cardBackgroundColor="@color/yellow"
             app:cardElevation="10dp">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <ImageView
-                    android:paddingTop="5dp"
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_centerHorizontal="true"
-                    app:tint="@color/white"
-                    android:src="@drawable/round_assignment_turned_in_24" />
+                    android:paddingTop="5dp"
+                    android:src="@drawable/round_assignment_turned_in_24"
+                    app:tint="@color/black" />
+
                 <TextView
                     android:id="@+id/task_done_number"
                     android:layout_width="wrap_content"
@@ -89,7 +92,7 @@
                     android:fontFamily="@font/avenir_next_rounded_pro_demi"
                     android:includeFontPadding="false"
                     android:text="0"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="30sp" />
 
                 <TextView
@@ -102,7 +105,7 @@
                     android:gravity="center"
                     android:includeFontPadding="false"
                     android:text="Nhiệm vụ đã hoàn thành"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
             </RelativeLayout>
 
@@ -113,7 +116,7 @@
             android:layout_height="150dp"
             android:layout_weight="1"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="@color/primaryColor"
+            app:cardBackgroundColor="@color/yellow"
             app:cardElevation="10dp">
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -123,19 +126,19 @@
                     android:layout_width="35dp"
                     android:layout_height="35dp"
                     android:layout_centerHorizontal="true"
-                    app:tint="@color/white"
+                    app:tint="@color/black"
                     android:src="@drawable/round_assignment_late_24" />
+
                 <TextView
                     android:id="@+id/task_pendding_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/avenir_next_rounded_pro_demi"
                     android:includeFontPadding="false"
                     android:text="0"
-                    android:textSize="30sp"
-                    android:textColor="@color/white"
-                    android:fontFamily="@font/avenir_next_rounded_pro_demi"
-                    android:layout_centerInParent="true"
-                    />
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
 
                 <TextView
                     android:id="@+id/task_pendding_label"
@@ -147,15 +150,31 @@
                     android:gravity="center"
                     android:includeFontPadding="false"
                     android:text="Các nhiệm vụ đang chờ giải quyết"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="16sp" />
             </RelativeLayout>
 
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
-    </LinearLayout>
+        <com.anychart.AnyChartView
+            android:id="@+id/any_chart_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+    </RelativeLayout>
 </LinearLayout>

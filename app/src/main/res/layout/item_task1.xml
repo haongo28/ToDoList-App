@@ -7,7 +7,6 @@
     android:orientation="horizontal"
     android:layout_marginTop="3sp"
     android:padding="10sp"
-    android:background="#F4FAFB"
     app:cardCornerRadius="8dp">
 
     <LinearLayout
@@ -17,14 +16,14 @@
     android:orientation="horizontal"
     android:layout_marginTop="3sp"
     android:padding="10sp"
-    android:background="#F4FAFB">
+    android:background="@color/fade_brown">
 
     <CheckBox
         android:id="@+id/chb_complete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:button="@drawable/ic_checkbox_complete_task"
-        android:buttonTint="#0093c4"
+        android:buttonTint="@color/dark_green"
         android:gravity="center_vertical"
         />
 

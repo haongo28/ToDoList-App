@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:tint="@color/yellow"
         android:src="@drawable/ic_home_hamburger"/>
 
     <LinearLayout
@@ -23,11 +24,13 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:tint="@color/yellow"
             android:src="@drawable/ic_tasks"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
             android:text="@string/tasks"/>
 
     </LinearLayout>
@@ -42,11 +45,13 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:tint="@color/yellow"
             android:src="@drawable/ic_calendar_todo"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
             android:text="@string/calendar_eng"/>
 
     </LinearLayout>
@@ -61,11 +66,13 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:tint="@color/yellow"
             android:src="@drawable/ic_me"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
             android:text="@string/me"/>
 
     </LinearLayout>

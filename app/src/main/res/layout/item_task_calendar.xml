@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginVertical="4dp"
-    android:backgroundTint="@color/primaryColor"
+    android:backgroundTint="@color/fade_brown"
     app:cardCornerRadius="8dp">
 
     <LinearLayout
@@ -15,7 +15,7 @@
         android:layout_gravity="center_vertical"
         android:layout_marginStart="8dp"
         android:paddingStart="12dp"
-        android:background="#F4FAFB"
+        android:background="@color/fade_brown"
         android:orientation="horizontal"
         android:paddingVertical="4dp"
         tools:ignore="RtlSymmetry">

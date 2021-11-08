@@ -18,7 +18,7 @@
             android:id="@+id/calendar_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/calendar_color" />
+            android:background="@color/primary_brown" />
 
         <LinearLayout
             android:id="@+id/task_layout_calendar"

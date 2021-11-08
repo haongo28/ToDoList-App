@@ -18,7 +18,7 @@
             android:layout_height="69dp"
             android:orientation="horizontal">
             <com.google.android.material.chip.Chip
-                android:backgroundTint="@color/choose_task_color"
+                android:backgroundTint="@color/primary_brown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingStart="20dp"
@@ -27,7 +27,7 @@
                 android:textSize="18sp"
                 android:hint="Tất cả"/>
             <com.google.android.material.chip.Chip
-                android:backgroundTint="@color/primaryColorLight"
+                android:backgroundTint="@color/fade_brown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingStart="20dp"
@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:backgroundTint="@color/primaryColorLight"
+                android:backgroundTint="@color/fade_brown"
                 android:hint="Bài tập"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"

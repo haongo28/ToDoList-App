@@ -39,8 +39,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/svg_on_boarding"
-        android:backgroundTint="#8560F9"
+        android:background="@color/dark_green"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,6 +53,7 @@
             android:layout_marginTop="12dp"
             android:layout_width="295dp"
             android:layout_height="52dp"
+            android:backgroundTint="@color/yellow"
             android:text="@string/start" />
 
         <com.google.android.material.button.MaterialButton
