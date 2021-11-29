@@ -62,16 +62,16 @@ public class CalendarFragment extends Fragment {
 
     private void GetTask() {
         tasks = new ArrayList<>();
-        tasks.add(new Task("1", "1", "1", true, true, new ArrayList<>(), null));
-        tasks.add(new Task("2", "2", "2", true, false, new ArrayList<>(), null));
-        tasks.add(new Task("3", "3", "3", true, true, new ArrayList<>(), null));
-        tasks.add(new Task("4", "4", "4", true, false, new ArrayList<>(), null));
-        tasks.add(new Task("5", "5", "4", true, false, new ArrayList<>(), null));
-        tasks.add(new Task("6", "6", "4", true, false, new ArrayList<>(), null));
+        tasks.add(new Task("1", "1", "1", "personal",true, true, new ArrayList<>(), null));
+        tasks.add(new Task("2", "2", "2", "homework",true, false, new ArrayList<>(), null));
+        tasks.add(new Task("3", "3", "3", "personal",true, true, new ArrayList<>(), null));
+        tasks.add(new Task("4", "4", "4", "personal",true, false, new ArrayList<>(), null));
+        tasks.add(new Task("5", "5", "4", "homework",true, false, new ArrayList<>(), null));
+        tasks.add(new Task("6", "6", "4", "homework",true, false, new ArrayList<>(), null));
 
         tasksCompleted = new ArrayList<>();
-        tasksCompleted.add(new Task("1", "123456789", "1", false, true, new ArrayList<>(), null));
-        tasksCompleted.add(new Task("3", "123456789", "3", false, false, new ArrayList<>(), null));
+        tasksCompleted.add(new Task("1", "123456789", "1", "homework",false, true, new ArrayList<>(), null));
+        tasksCompleted.add(new Task("3", "123456789", "3", "homework",false, false, new ArrayList<>(), null));
 
         layoutTask.setVisibility(View.VISIBLE);
         layoutNoTask.setVisibility(View.GONE);

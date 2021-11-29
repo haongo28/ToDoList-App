@@ -13,11 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="69dp"
             android:orientation="horizontal">
+
             <com.google.android.material.chip.Chip
+                android:id="@+id/cAll"
                 android:backgroundTint="@color/primary_brown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -26,7 +29,9 @@
                 android:layout_gravity="center"
                 android:textSize="18sp"
                 android:hint="Tất cả"/>
+
             <com.google.android.material.chip.Chip
+                android:id="@+id/cPersonal"
                 android:backgroundTint="@color/fade_brown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -35,7 +40,9 @@
                 android:layout_gravity="center"
                 android:textSize="18sp"
                 android:hint="Cá nhân"/>
+
             <com.google.android.material.chip.Chip
+                android:id="@+id/cHomework"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -44,11 +51,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 android:textSize="18sp" />
-<!--            <LinearLayout-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="69sp"-->
-<!--                android:orientation="horizontal"-->
-<!--                android:layout_marginStart="20sp" >-->
+
                 <Toolbar
                     android:layout_width="match_parent"
                     android:layout_height="69sp"
@@ -57,7 +60,6 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5sp">
                 </Toolbar>
-<!--            </LinearLayout>-->
         </LinearLayout>
 
 
@@ -82,11 +84,13 @@
                 android:orientation="horizontal"
                 android:padding="10sp"
                 android:gravity="center_vertical">
+
                 <ImageView
                     android:id="@+id/img_down"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src = "@drawable/ic_arrow_down" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -94,6 +98,7 @@
                     android:textSize="18sp"
                     android:layout_marginStart="8sp"
                     android:hint="Công việc hoàn thành" />
+
                 <TextView
                     android:id="@+id/tv_count_task_completed"
                     android:layout_width="wrap_content"
@@ -102,6 +107,7 @@
                     android:textSize="18sp"
                     android:layout_marginStart="7sp"
                     android:text="0"/>
+
             </LinearLayout>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_task_completed"
@@ -111,14 +117,15 @@
             </androidx.recyclerview.widget.RecyclerView>
         </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/no_task_layout"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/no_task_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -134,7 +141,7 @@
                 android:text="@string/click_add_to_create_task"
                 android:textColor="#5B5C62"
                 android:textSize="16sp" />
-            </LinearLayout>
+        </LinearLayout>
 
     </LinearLayout>
 

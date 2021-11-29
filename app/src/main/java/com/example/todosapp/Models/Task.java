@@ -6,6 +6,7 @@ import java.util.Date;
 public class Task {
     private String id;
     private String title;
+    private String category;
     private String description;
     private boolean isCompleted;
     private boolean isStart;
@@ -17,9 +18,10 @@ public class Task {
         date = new Date();
     }
 
-    public Task(String id, String title, String description, boolean isCompleted, boolean isStart, ArrayList<SubTask> subTasks, Date date) {
+    public Task(String id, String title, String description, String category, boolean isCompleted, boolean isStart, ArrayList<SubTask> subTasks, Date date) {
         this.id = id;
         this.title = title;
+        this.category = category;
         this.description = description;
         this.isCompleted = isCompleted;
         this.isStart = isStart;
@@ -27,14 +29,23 @@ public class Task {
         this.date = date;
     }
 
-    public Task(String id, String title, String description) {
+    public Task(String id, String title, String description, String category) {
         this.id = id;
         this.title = title;
         this.description = description;
+        this.category = category;
         isCompleted = false;
         isStart = false;
         subTasks = new ArrayList<>();
         date = new Date();
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public String getId() {

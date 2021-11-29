@@ -3,6 +3,7 @@ package com.example.todosapp.Fragment.Main;
 
 import static com.example.todosapp.Adapter.TaskAdapter.*;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -17,6 +18,7 @@ import android.widget.Toast;
 import android.widget.Toolbar;
 
 import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -26,7 +28,7 @@ import com.example.todosapp.Adapter.TaskCalendarAdapter;
 import com.example.todosapp.Adapter.TaskCalendarCompletedAdapter;
 import com.example.todosapp.Models.Task;
 import com.example.todosapp.R;
-
+import com.google.android.material.chip.Chip;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,14 +53,19 @@ public class TaskFragment extends Fragment {
 
     Boolean isExpand =true;
 
+    Chip cAll;
+    Chip cPersonal;
+    Chip cHomework;
+    String isFilter = "all";
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_task, container, false);
         InitComponent();
         setDataListTask();
-        setDataListTaskCompleted();
         SetupToolBar();
+        setOnClick();
         return view;
     }
 
@@ -71,6 +78,9 @@ public class TaskFragment extends Fragment {
         tbmenu = view.findViewById(R.id.tb_task);
         noTaskLayout = view.findViewById(R.id.no_task_layout);
         TaskLayout = view.findViewById(R.id.task_layout);
+        cAll = view.findViewById(R.id.cAll);
+        cPersonal = view.findViewById(R.id.cPersonal);
+        cHomework = view.findViewById(R.id.cHomework);
     }
 
     private void setDataListTask(){
@@ -80,7 +90,7 @@ public class TaskFragment extends Fragment {
         rvTask.setNestedScrollingEnabled(false);
 
         taskAdapter = new TaskAdapter();
-        mListTask =getListTask();
+        mListTask = setListTask();
 
         taskAdapter.setData(mListTask, (task, position) -> {
                 mListTask.remove(task);
@@ -95,6 +105,42 @@ public class TaskFragment extends Fragment {
         });
         rvTask.setAdapter(taskAdapter);
     }
+
+    private void setOnClick (){
+        cAll.setOnClickListener(this::onClick);
+        cPersonal.setOnClickListener(this::onClick);
+        cHomework.setOnClickListener(this::onClick);
+
+        onClick(view);
+    }
+
+    public void onClick(View view) {
+        if (cAll.equals(view)) {
+            isFilter = "all";
+        } else if (cPersonal.equals(view)) {
+            isFilter = "personal";
+        } else if (cHomework.equals(view)) {
+            isFilter = "homework";
+        }
+        setDataListTaskCompleted();
+        setDataListTask();
+    }
+
+    private List<Task> setListTask (){
+        List<Task> defaultListTask = getListTask();
+        List<Task> filteredListTask = new ArrayList<>();
+        if (!isFilter.equals("all")){
+            for (int i=0; i<defaultListTask.size(); i++){
+                Task taskObj = defaultListTask.get(i);
+                if (isFilter.equals(taskObj.getCategory())){
+                    filteredListTask.add(taskObj);
+                }
+            }
+            return filteredListTask;
+        }
+        return defaultListTask;
+    }
+
     private void setDataListTaskCompleted(){
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         rvTaskCompleted.setLayoutManager(linearLayoutManager);
@@ -119,12 +165,12 @@ public class TaskFragment extends Fragment {
     }
     private List<Task> getListTask(){
         List<Task> list = new ArrayList<>();
-        list.add(new Task("1", "1", "1", false, true, new ArrayList<>(), null));
-        list.add(new Task("2", "2", "2", false, false, new ArrayList<>(), null));
-        list.add(new Task("3", "3", "3", false, true, new ArrayList<>(), null));
-        list.add(new Task("4", "4", "4", false, false, new ArrayList<>(), null));
-        list.add(new Task("5", "5", "4", false, false, new ArrayList<>(), null));
-        list.add(new Task("6", "6", "4", false, false, new ArrayList<>(), null));
+        list.add(new Task("1", "1", "1", "personal", false, true, new ArrayList<>(), null));
+        list.add(new Task("2", "2", "2", "homework", false, false, new ArrayList<>(), null));
+        list.add(new Task("3", "3", "3","homework", false, true, new ArrayList<>(), null));
+        list.add(new Task("4", "4", "4", "personal",false, false, new ArrayList<>(), null));
+        list.add(new Task("5", "5", "4","personal", false, false, new ArrayList<>(), null));
+        list.add(new Task("6", "6", "4", "homework",false, false, new ArrayList<>(), null));
         TaskLayout.setVisibility(View.VISIBLE);
         noTaskLayout.setVisibility(View.GONE);
         return list;
