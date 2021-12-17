@@ -44,7 +44,7 @@
             android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/profile_image"
             android:includeFontPadding="false"
-            android:text="xingqiu@gmail.com"
+            android:hint="xingqiu@gmail.com"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -91,7 +91,7 @@
                     android:layout_centerInParent="true"
                     android:fontFamily="@font/avenir_next_rounded_pro_demi"
                     android:includeFontPadding="false"
-                    android:text="0"
+                    android:hint="0"
                     android:textColor="@color/black"
                     android:textSize="30sp" />
 
@@ -136,7 +136,7 @@
                     android:layout_centerInParent="true"
                     android:fontFamily="@font/avenir_next_rounded_pro_demi"
                     android:includeFontPadding="false"
-                    android:text="0"
+                    android:hint="0"
                     android:textColor="@color/black"
                     android:textSize="30sp" />
 

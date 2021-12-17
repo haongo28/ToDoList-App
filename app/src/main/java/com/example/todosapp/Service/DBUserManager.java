@@ -6,22 +6,22 @@ import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
-public class DBManager {
+public class DBUserManager {
     private DBUser dbUser;
     private Context context;
     private SQLiteDatabase database;
 
-    public DBManager(Context context){
+    public DBUserManager(Context context){
         this.context = context;
     }
 
-    public DBManager open() throws SQLException {
+    public DBUserManager open() throws SQLException {
         dbUser = new DBUser(context);
         database = dbUser.getWritableDatabase();
+        // TODO: nao nhap data thuc nho xoa vong for nay di nho
         for (int i = 1; i<=3; i++){
             delete(i);
         }
-
         return this;
     }
 
