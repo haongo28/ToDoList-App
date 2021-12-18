@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         SetUpBottomNavigation();
         AnimationForAddButton();
         setOnClickForButton();
-        openInputTaskDialog(Gravity.BOTTOM);
 
     }
 
@@ -96,5 +95,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             dialog.setCancelable(false);
         }
+
+        dialog.show();
     }
 }
