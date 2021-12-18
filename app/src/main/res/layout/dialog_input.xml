@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/bg_input_corner_16"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header_input_corner_16"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Thêm công việc mới"
+        android:textColor="@color/yellow"
+        android:textSize="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nhập công việc mới tại đây"
+            android:textColor="@android:color/black"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edit_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_input_corner_10_border_gray"
+            android:hint="Công việc mới"
+            android:padding="12dp"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cPersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/fade_brown"
+                android:hint="Cá nhân"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btn_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_baseline_calendar_today_24"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <TextView
+                android:id="@+id/textview_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right">
+
+                <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/custom_inputbutton"
+                    android:baselineAlignBottom="false"
+                    android:src="@drawable/ic_baseline_send_24" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

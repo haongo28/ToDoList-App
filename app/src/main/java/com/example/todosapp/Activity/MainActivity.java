@@ -6,7 +6,14 @@ import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.navigation.ui.NavigationUI;
 
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
@@ -33,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         InitComponent();
         SetUpBottomNavigation();
         AnimationForAddButton();
+        setOnClickForButton();
+        openInputTaskDialog(Gravity.BOTTOM);
+
     }
 
     private void InitComponent() {
@@ -53,5 +63,38 @@ public class MainActivity extends AppCompatActivity {
     private void AnimationForAddButton() {
         Animation animation = AnimationUtils.loadAnimation(this, R.anim.floating_action_button_anim);
         imgAnim.startAnimation(animation);
+    }
+
+    private void setOnClickForButton(){
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openInputTaskDialog(Gravity.BOTTOM);
+            }
+        });
+    }
+
+    // Input Task Dialog
+    private void openInputTaskDialog(int gravity) {
+        final Dialog dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_input);
+
+        Window window = dialog.getWindow();
+        if (window == null) {
+            return;
+        }
+        window.setLayout( WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        WindowManager.LayoutParams windowAttributes = window.getAttributes();
+        windowAttributes.gravity = gravity;
+        window.setAttributes(windowAttributes);
+
+        if (Gravity.BOTTOM == gravity){
+            dialog.setCancelable(true);
+        } else {
+            dialog.setCancelable(false);
+        }
     }
 }
