@@ -3,35 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/drawable/bg_header_input_corner_16.xml" value="0.1" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/drawable/bg_input_corner_10_border_gray.xml" value="0.125" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/drawable/bg_white_corner_16.xml" value="0.21296296296296297" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/drawable/custom_inputbutton.xml" value="0.20729166666666668" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.20729166666666668" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.20729166666666668" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/activity_login.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/activity_main.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/activity_register.xml" value="0.2375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/activity_splash.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/activity_todo.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/dialog_input.xml" value="0.4" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/dialog_profile_setting.xml" value="0.2375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/fragment_calendar.xml" value="0.2375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/fragment_categories.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/fragment_detail_task.xml" value="0.2375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/fragment_on_boarding1.xml" value="0.19114583333333332" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/fragment_on_boarding3.xml" value="0.19114583333333332" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/fragment_task.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/item_categories.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/item_favorite_list.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/item_options_finished.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/item_options_todo.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/item_task1.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/item_task_calendar.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/item_task_calendar_completed.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/layout/layout_bottom_toolbar.xml" value="0.259375" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/menu/categories_menu.xml" value="0.19114583333333332" />
-        <entry key="..\:/Hao_course/Semester2021_2022/Mobile/ToDoList-App/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20729166666666668" />
         <entry key="..\:/Hao_course/Semester2021_2022/ToDoList-App/app/src/main/res/drawable/ic_attach_icon.xml" value="0.1" />
         <entry key="..\:/Hao_course/Semester2021_2022/ToDoList-App/app/src/main/res/drawable/ic_back_icon.xml" value="0.1" />
         <entry key="..\:/Hao_course/Semester2021_2022/ToDoList-App/app/src/main/res/drawable/ic_baseline_link_24.xml" value="0.1" />
@@ -105,6 +76,7 @@
         <entry key="..\:/Part-time/ToDoList-App/app/src/main/res/layout/activity_reset_password.xml" value="0.16261398176291794" />
         <entry key="..\:/Part-time/ToDoList-App/app/src/main/res/layout/activity_reset_password2.xml" value="0.16261398176291794" />
         <entry key="..\:/Part-time/ToDoList-App/app/src/main/res/layout/activity_todo.xml" value="0.28532608695652173" />
+        <entry key="..\:/Part-time/ToDoList-App/app/src/main/res/layout/dialog_input.xml" value="0.15273556231003038" />
         <entry key="..\:/Part-time/ToDoList-App/app/src/main/res/layout/dialog_profile_setting.xml" value="0.24139492753623187" />
         <entry key="..\:/Part-time/ToDoList-App/app/src/main/res/layout/fragment_calendar.xml" value="0.24139492753623187" />
         <entry key="..\:/Part-time/ToDoList-App/app/src/main/res/layout/fragment_categories.xml" value="0.2821557971014493" />

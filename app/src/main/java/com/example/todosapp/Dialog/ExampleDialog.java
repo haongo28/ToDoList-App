@@ -12,9 +12,20 @@ import android.widget.EditText;
 import com.example.todosapp.R;
 
 public class ExampleDialog extends AppCompatDialogFragment {
-    //private EditText editTextUsername;
-    //private EditText editTextPassword;
-    //private ExampleDialogListener listener;
+    private EditText edtUsername;
+    private EditText edtEmail;
+    private EditText edtPassword;
+    private EditText edtConfirmPassword;
+
+    private String username;
+    private String email;
+    private String password;
+
+    public ExampleDialog(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
@@ -22,6 +33,9 @@ public class ExampleDialog extends AppCompatDialogFragment {
 
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View view = inflater.inflate(R.layout.dialog_profile_setting, null);
+
+        bindView(view);
+        setText();
 
         builder.setView(view)
                 .setTitle("Setting")
@@ -39,26 +53,20 @@ public class ExampleDialog extends AppCompatDialogFragment {
                         // listener.applyTexts(username, password);
                     }
                 });
-
-        //editTextUsername = view.findViewById(R.id.edit_username);
-        // editTextPassword = view.findViewById(R.id.edit_password);
-
         return builder.create();
     }
 
-    //@Override
-    //public void onAttach(Context context) {
-    //    super.onAttach(context);
+    public void bindView(View view) {
+        edtUsername = view.findViewById(R.id.edit_username);
+        edtEmail = view.findViewById(R.id.edit_email);
+        edtPassword = view.findViewById(R.id.edit_password);
+        edtConfirmPassword = view.findViewById(R.id.edit_password_confirm);
+    }
 
-    //    try {
-    //        listener = (ExampleDialogListener) context;
-    //     } catch (ClassCastException e) {
-    //        throw new ClassCastException(context.toString() +
-    //               "must implement ExampleDialogListener");
-    //   }
-    // }
-
-    //public interface ExampleDialogListener {
-    //    void applyTexts(String username, String password);
-    // }
+    public void setText() {
+        edtUsername.setText(username);
+        edtEmail.setText(email);
+        edtPassword.setText(password);
+        edtConfirmPassword.setText(password);
+    }
 }

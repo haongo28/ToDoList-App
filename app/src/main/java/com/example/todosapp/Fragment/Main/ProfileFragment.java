@@ -39,6 +39,10 @@ public class ProfileFragment extends Fragment {
     DBUserManager dbUserManager;
     DBToDoManager dbToDoManager;
 
+    String userName;
+    String mail;
+    String password;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -63,7 +67,7 @@ public class ProfileFragment extends Fragment {
     }
 
     public void openDialog() {
-        ExampleDialog dialog = new ExampleDialog();
+        ExampleDialog dialog = new ExampleDialog(userName, mail, password);
         Log.d("check","create dialog");
         dialog.show(getActivity().getSupportFragmentManager(), "example dialog");
         Log.d("check","create dialog");
@@ -91,8 +95,12 @@ public class ProfileFragment extends Fragment {
         }
         while (cursor.moveToNext()){
             if (cursor.getString(cursor.getColumnIndex("id")).equals("2")){
-                username.setText(cursor.getString(cursor.getColumnIndex("username")));
-                email.setText(cursor.getString(cursor.getColumnIndex("email")));
+                userName = cursor.getString(cursor.getColumnIndex("username"));
+                mail = cursor.getString(cursor.getColumnIndex("email"));
+                password = cursor.getString(cursor.getColumnIndex("password"));
+
+                username.setText(userName);
+                email.setText(mail);
                 System.out.println(username.getText());
             }
         }
