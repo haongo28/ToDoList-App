@@ -26,8 +26,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="12dp"
         android:lineHeight="56sp"
-        android:textColor="@color/yellow"
-        android:text="@string/todos_list" />
+        android:text="@string/todos_list"
+        android:textColor="@color/yellow" />
 
     <RelativeLayout
         android:id="@+id/login_group"
@@ -56,6 +56,7 @@
             tool:placeholderText="Email">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_username1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
@@ -87,7 +88,7 @@
             tool:placeholderText="Email">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/login_username1"
+                android:id="@+id/login_password1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Password"
@@ -139,25 +140,7 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/login_button"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="50dp">
-            <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:background="@drawable/google"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="20dp"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/white"
-                android:text="Sign in with google "/>
 
-        </LinearLayout>
 
 
 
