@@ -67,6 +67,15 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        toForgotBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(LoginActivity.this, ResetpassActivity.class);
+                startActivity(i);
+
+                overridePendingTransition(R.anim.phaiquatrai1,R.anim.phaiquatrai2);
+            }
+        });
 
     }
 
