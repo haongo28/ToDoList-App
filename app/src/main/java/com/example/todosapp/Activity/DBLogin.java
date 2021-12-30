@@ -38,11 +38,11 @@ public class DBLogin extends SQLiteOpenHelper {
             return true;
     }
 
-    public boolean updatepassword (String user, String password){
+    public boolean updatepassword (String email, String password){
         SQLiteDatabase MyDB = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put("password", password);
-        long result = MyDB.update("users",  contentValues, "user = ?", new String[] {user} );
+        long result = MyDB.update("users",  contentValues, "email = ?", new String[] {email} );
         if(result==-1) return false;
         else
             return true;
